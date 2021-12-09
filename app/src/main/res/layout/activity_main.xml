@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <TextView
+    <EditText
         android:id="@+id/idTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
