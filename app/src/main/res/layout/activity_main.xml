@@ -6,24 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:gravity="center">
+    android:fitsSystemWindows="true">
 
-    <TextView
-        android:id="@+id/idTextView"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World"
-        android:padding="10dp"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+    </androidx.appcompat.widget.Toolbar>
+
+
+<!--    <include layout="@layout/context_main" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:layout_gravity="center"
-        android:gravity="center"/>
+        android:gravity="center">
+
+
+
+
+
+
+
 
 
     <Button
-        android:id="@+id/idButtom"
+        android:id="@+id/idButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="click me"
+        android:text="Contextual Menu"
         android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/idButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popup Menu"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/idButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert Message"
+        android:padding="10dp"/>
+
+
+    </LinearLayout>
 
 
 
